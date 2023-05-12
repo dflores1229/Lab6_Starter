@@ -77,7 +77,7 @@ function initFormHandler() {
   //            values from the FormData object and insert them into recipeObject
   const recipeObject = Object.create();
 
-  const keysArr = Object.keys(FormData);
+  const keysArr = Object.keys(formData);
   for( let key in keysArr){
     const val = FormData[key];
     recipeObject(key, val);
