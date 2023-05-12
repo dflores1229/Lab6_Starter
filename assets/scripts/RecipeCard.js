@@ -47,8 +47,7 @@ class RecipeCard extends HTMLElement {
     if (!data) return;
 
     // A6. TODO - Select the <article> we added to the Shadow DOM in the constructor
-    const arti = shadowOpen.getElementsByID("article");
-    console.log(arti);
+    const arti = shadowOpen.querySelector("article");
 
     // A7. TODO - Set the contents of the <article> with the <article> template given in
     //           cardTemplate.html and the data passed in (You should only have one <article>,
@@ -60,3 +59,4 @@ class RecipeCard extends HTMLElement {
 
 // A8. TODO - Define the Class as a customElement so that you can create
 //           'recipe-card' elements
+customElements.define("recipe-card", RecipeCard);
