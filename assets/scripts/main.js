@@ -98,7 +98,7 @@ function initFormHandler() {
   // B6. TODO - Create a new <recipe-card> element
   const recipeCard = document.createElement("recipe-card");
   // B7. TODO - Add the recipeObject data to <recipe-card> using element.data
-  recipeCard.data = recipeObject.data;
+  recipeCard.data = recipeObject;
   // B8. TODO - Append this new <recipe-card> to <main>
   main.append(recipeCard);
 
