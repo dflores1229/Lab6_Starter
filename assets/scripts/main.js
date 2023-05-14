@@ -110,8 +110,8 @@ function initFormHandler() {
       recipesArr.push(recipeCard);
     }else{
       recipesArr = [recipeObject];
-      localStorage.setItem("recipes", JSON.stringify(recipesArr));
     }
+    localStorage.setItem("recipes", JSON.stringify(recipesArr));
     
   }); //end of event listener
 
